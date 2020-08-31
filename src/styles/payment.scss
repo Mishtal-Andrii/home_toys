@@ -1,0 +1,20 @@
+@import "./service.scss";
+
+.payment {
+  @extend .shipping;
+
+  &__image {
+    @extend .shipping__image;
+  }
+
+  &__info {
+
+    &--heading {
+      @extend .shipping__info--heading;
+    }
+
+    &--about {
+      @extend .shipping__info--about;
+    }
+  }
+}

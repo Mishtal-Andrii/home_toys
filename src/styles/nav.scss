@@ -1,0 +1,51 @@
+@import "./vars.scss";
+
+.nav {
+  max-width: 1170px;
+  margin: 0 auto;
+ 
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    padding: 20px  0;
+    font-size: 18px;
+  }
+
+  &__link {
+    transition: $hover-duration;
+    color: #fff;
+    padding: 13px  29px 2px;
+
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+
+    &--active {
+      background-color: green;
+    }
+  }
+
+  &__cart {
+    display: flex;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-left: 600px;
+  
+    &--image {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+      margin-bottom: 8px;
+      transition: $hover-duration;
+
+      &:hover {
+        transform: scale(0.8);
+      }
+    }
+  }
+}

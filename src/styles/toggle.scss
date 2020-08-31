@@ -1,0 +1,36 @@
+.toggle {
+  
+  &__left,
+  &__right {
+    margin-right: 10px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ffbd00;
+    background-color: #fff;
+    outline: none;
+    transition: $hover-duration;
+  }
+
+  &__left:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 11px;
+    height: 20px;
+    background-image: url(../images/next.png);
+    transform: translate(-50%, -50%);
+  }
+
+  &__right {
+    @extend .toggle__left;
+    transform: rotate(180deg);
+  }
+  &__left:focus,
+  &__left:hover {
+    background: #ffbd00;
+    outline: none;
+  }
+}

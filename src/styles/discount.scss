@@ -1,0 +1,21 @@
+.discount {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 103px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    color: #2b2b2b;
+    font-size: 56px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__products {
+    margin-top: 37px;
+  }
+}

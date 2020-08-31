@@ -13,7 +13,6 @@ a {
   padding: 0;
   margin: 0;
   text-decoration: none;
-  outline: none;
 }
 
 ul,
@@ -31,9 +30,6 @@ button {
 }
 
 html {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
   scroll-behavior: smooth;
 }
 
@@ -42,7 +38,6 @@ html {
 }
 
 input {
-  font-family: "Poppins", sans-serif;
   border: none;
   background-image: none;
   background-color: transparent;

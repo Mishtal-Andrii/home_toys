@@ -1,0 +1,73 @@
+.cards-box {
+  display: flex;
+}
+
+.cards {
+  cursor: pointer;
+  width: 289px;
+  height: 439px;
+  margin-right: 5px;
+  border-radius: 10px;
+  border: 1px solid #e9e9e9;
+  background-color: #fff;
+  transition: $hover-duration;
+
+  &:hover {
+    box-shadow: 0 0 15px 7px rgba(0,0,0,0.27);
+    transform: scale(0.9);
+  }
+  
+
+  &__icon-first {
+    margin: 56px 20px 63px 25px;
+  }
+
+  &__icon-second {
+    margin: 13px 55px 39px 56px;
+  }
+
+  &__icon-third {
+    margin: 41px  43px 68px 26px;
+  }
+
+  &__icon-fourth {
+    margin: 28px 62px 37px 46px;
+  }
+
+  &__about {
+    color: #2b2b2b;
+    width: 228px;
+    line-height: 19px;
+    font-weight: 400;
+    margin: 0 0 0 15px;
+  }
+
+  &__prize {
+    margin: 20px 0 0 15px;
+  }
+
+  &__btn {
+    margin: 20px 0 0 15px;
+    padding-top: 8px;
+    width: 259px;
+    height: 42px;
+    border-radius: 21px;
+    border: 2px solid #00ca00;
+    background-color: #ffff;
+    color: #2b2b2b;
+    font-size: 18px;
+    line-height: 19px;
+    outline: none;
+    transition: $hover-duration;
+
+    &:hover {
+      color: #ffff;
+      background-color: #00ca00;
+    }
+
+    &--icon {
+      margin-bottom: 6px;
+      margin-right: 8px;
+    }
+  }
+}

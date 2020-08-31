@@ -1,0 +1,30 @@
+@import "./service.scss";
+
+.support {
+  @extend .shipping;
+
+  &__image {
+    @extend .shipping__image;
+  }
+
+  &__info {
+    @extend .shipping__info;
+
+    &--heading {
+      @extend .shipping__info--heading;
+    }
+
+    &--about {
+      @extend .shipping__info--about;
+      cursor: pointer;
+      transition: $hover-duration;
+
+      &:focus,
+      &:hover {
+        color: rgb(0, 128, 0);
+        font-weight: 800;
+        text-decoration: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.review {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+
+  &__btn {
+    margin-bottom: 25px;
+  }
+
+  &__title {
+    margin-right: 130px;
+    margin-left: 50px;
+    margin-bottom: 0;
+    color: #2b2b2b;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 37px;
+    text-transform: uppercase;
+  }
+}

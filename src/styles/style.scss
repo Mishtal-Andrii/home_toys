@@ -1,3 +1,23 @@
-h1 {
-  color: green;
-}
+@import "./main.scss";
+@import "./reset.scss";
+@import "./header.scss";
+@import "./toggle-menu.scss";
+@import "./nav.scss";
+@import "./products.scss";
+@import "./service.scss";
+@import "./shipping.scss";
+@import "./package.scss";
+@import "./support.scss";
+@import "./payment.scss";
+@import "./discount.scss";
+@import "./cards.scss";
+@import "./dots.scss";
+@import "./sales.scss";
+@import "./toggle.scss";
+@import "./about-us.scss";
+@import "./popular.scss";
+@import "./review.scss";
+@import "./popular-product.scss";
+@import "./popular-comments.scss";
+@import "./comment.scss";
+@import "./footer.scss";
