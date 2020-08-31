@@ -1,13 +1,11 @@
-Implement landing page according to [Figma design](https://www.figma.com/file/vhfzZ7SqWGkMGd5iCDdBCy/Dia-New?node-id=0%3A1)
+Implement landing page according to [Design](https://drive.google.com/drive/folders/1Hk5-9urJyBEP1nDOY8zSvKAyAan6DScH)
 
-[DEMO LINK](https://Mishtal-Andrii.github.io/<name>/).
+[DEMO LINK](https://Mishtal-Andrii.github.io/home_toys/).
 
 
-Technologies used HTML,CSS,SASS,BEM
+Technologies used HTML,CSS,SASS,BEM,JS;
 
-- Large screens 2560px
-- Full HD 1920px
-- The design 1600px
-- Notebook 1280px
-- Tablet 1024
-- Mobile (> 320px)
+Instructions on how to run project locally:
+1. npm i
+2. npm start
+3. open your browser at http://localhost:3000
