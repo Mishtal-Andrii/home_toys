@@ -1,0 +1,118 @@
+.toys {
+  display: flex;
+
+  &__left {
+    cursor: pointer;
+    position: relative;
+    width: 732px;
+    height: 482px;
+    border-radius: 10px;
+    background-color: #0af;
+    transition: $hover-duration;
+
+    &:hover {
+      box-shadow: 0 0 15px 7px rgba(0,0,0,0.27);
+      transform: scale(0.9);
+    }
+
+    &--prize {
+      position: absolute;
+      top: 86px;
+      left: 16px;
+    }
+
+    &--offer {
+      position: absolute;
+      bottom: 35px;
+      left: 17px;
+      z-index: 1;
+    }
+
+    &--items {
+      position: absolute;
+      right: 0;
+      width: 375px;
+      height: 451px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    margin-left: 29px;
+  }
+
+  .toys-girl {
+    cursor: pointer;
+    position: relative;
+    width: 417px;
+    height: 231px;
+    border-radius: 10px;
+    background-color: #ff0c7b;
+    margin-bottom: 20px;
+    transition: $hover-duration ;
+
+    &:hover {
+      transform: scale(0.9);
+      box-shadow: 0 0 15px 7px rgba(0,0,0,0.27);
+    }
+
+    &__heading {
+      color: #fff;
+      font-size: 38px;
+      font-weight: 700;
+      line-height: 42px;
+      text-transform: uppercase;
+      margin: 69px 0 0 38px;
+    }
+
+    &__collection {
+      text-decoration: underline;
+      color: #fff;
+      font-size: 16px;
+      line-height: 42px;
+      margin: 24px 0 0 40px;
+      transition: $hover-duration;
+
+      &:hover {
+        text-decoration: none;
+        color: black;
+      }
+    }
+
+    &__image {
+      position: absolute;
+      right: 25px;
+      top: 14px;
+    }
+  }
+
+  .toys-boy {
+    cursor: pointer;
+    position: relative;
+    width: 417px;
+    height: 231px;
+    border-radius: 10px;
+    background-color: #00ca00;
+    transition: $hover-duration;
+
+    &:hover {
+      box-shadow: 0 0 15px 7px rgba(0,0,0,0.27);
+      transform: scale(0.9);
+    }
+
+    &__heading {
+      @extend .toys-girl__heading;
+    }
+
+    &__collection {
+      @extend .toys-girl__collection;
+    }
+
+    &__image {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+}

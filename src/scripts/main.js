@@ -26,8 +26,11 @@ const cards = document.querySelectorAll('.cards-wrapper');
 const prevBtn = document.querySelector('.toggle__left');
 const nextBtn = document.querySelector('.toggle__right');
 const dotsSlides = document.querySelectorAll('.dots__icon');
+const slidesWrapper = document.querySelector('.discount__products');
+const slidesField = document.querySelector('.cards-box');
+const width = window.getComputedStyle(slidesWrapper).width;
 
-let cardIndex = 0;
+let offset = 0;
 let dotIndex = 0;
 
 function carousel() {
@@ -46,37 +49,37 @@ function carousel() {
   }
 }
 
-showCard(cardIndex);
+slidesField.style.transition = '0.5s all';
+slidesWrapper.style.overflow = 'hidden';
 
-function showCard(n) {
-  if (n > cards.length) {
-    cardIndex = 1;
-  }
+slidesField.style.width = 100 * cards.length + '%';
 
-  if (n < 1) {
-    cardIndex = cards.length;
-  }
-
-  // eslint-disable-next-line no-return-assign
-  cards.forEach(item => item.style.display = 'none');
-
-  cards[cardIndex - 1].style.display = 'flex';
-}
-
-function addSlides(n) {
-  showCard(cardIndex += n);
-}
-
-prevBtn.addEventListener('click', () => {
-  addSlides(-1);
-  dotIndex--;
-  carousel();
+cards.forEach(slide => {
+  slide.style.width = width;
 });
 
 nextBtn.addEventListener('click', () => {
-  addSlides(1);
+  if (offset === +width.slice(0, width.length - 2) * (cards.length - 1)) {
+    offset = 0;
+  } else {
+    offset += +width.slice(0, width.length - 2);
+  }
+
+  slidesField.style.transform = `translateX(-${offset}px)`;
   dotIndex++;
   carousel();
+});
+
+prevBtn.addEventListener('click', () => {
+  if (offset === 0) {
+    offset = +width.slice(0, width.length - 2) * (cards.length - 1);
+  } else {
+    offset -= +width.slice(0, width.length - 2);
+    dotIndex--;
+    carousel();
+  }
+
+  slidesField.style.transform = `translateX(-${offset}px)`;
 });
 
 // Carosel2
